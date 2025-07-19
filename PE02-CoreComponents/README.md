@@ -1,0 +1,8 @@
+Input
+At the top of the app, I included a simple text input where users can type in the name of a course they liked. For example, someone could enter “CS451” as their favorite. Right above that input field, there’s a placeholder image I added using the Image component—just something basic to make the layout feel more complete. The input has a gray border and a default value to show people how to use it.
+
+Process
+I built this app using React Native with Expo, mainly to get more practice working with core components. I wrapped everything in a ScrollView so users can scroll through the full content, especially on smaller screens. Inside the main View, I laid out the different course categories. These include Core Requirements, Depth of Study, Electives, and Capstone. Each section title is bold and highlighted with a yellow background, which I styled using StyleSheet. The course names underneath are listed using Text components. I also used basic flexbox styling to center everything and make the layout look clean and organized.
+
+Output
+The final result is a simple app that shows a full course list in a scrollable format. Users can type in a course they liked at the top and scroll down to see all the program categories and course options. It doesn’t save input or do any logic yet, but it was a great project for me to learn how to use components like Text, TextInput, Image, and StyleSheet. This was my way of getting more comfortable with React Native and starting to build real layouts on my own.
