@@ -20,23 +20,24 @@ class App extends Component {
   }
 
   //THIS IS THE NEW STUFF FOR THE SUBMIT BUTTON!
-  submitTodo = () => {
+submitTodo = () => {
   const { inputValue, todos } = this.state;
 
-  if (inputValue.trim() === '') return;  //remove blank spaces at the beginning and end of the string thats inputed
+  if (inputValue.trim() === '') return;
 
   const newTodo = {
     title: inputValue,
-    key: todos.length + 1
+    todoIndex: todos.length,
+    complete: false,
   };
 
   this.setState({
     todos: [...todos, newTodo],
-    inputValue: ''
+    inputValue: '',
+  }, () => {
+    console.log('State:', this.state);
   });
-
-  console.log('New Todo Added:', newTodo.title);
- };
+};
 
 //END OF THE NEW STUFF FOR THE SUBMIT BUTTON!
 
